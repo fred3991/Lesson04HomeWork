@@ -32,7 +32,7 @@ namespace Lesson04HomeWork
         }
 
         //Mетод, вычисляющий векторное произведение с другим вектором
-        public Vector СrossProduct(Vector vectorA, Vector vectorB)  // Возвращает новый вектор
+        public Vector СrossProduct(Vector vectorA, Vector vectorB)  // Возвращает новый век тор
         {
             double newVecX, newVecY, newVecZ;
             newVecX = (vectorA.Y * vectorB.Z - vectorA.Z * vectorB.Y);
