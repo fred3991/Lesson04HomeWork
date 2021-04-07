@@ -8,9 +8,9 @@ namespace Lesson04HomeWork
 {
     class Vector
     {
-        private double X;
-        private double Y;
-        private double Z;
+        public double X;
+        public double Y;
+        public double Z;
 
         public Vector(double X, double Y, double Z) // Конструктор
         {
@@ -20,31 +20,87 @@ namespace Lesson04HomeWork
         }
 
         // Длина вектора
-        public double Length(double X, double Y, double Z)
+        /// <summary>
+        /// Возвращает длину вектора
+        /// </summary>
+        /// <returns></returns>
+        public double Length()
         {
             return Math.Sqrt(X * X + Y * Y + Z * Z);
         }
 
         // Скалярное произведение с другим вектором
-        public double DotProduct(Vector vectorA, Vector vectorB)
+
+
+        /// <summary>
+        /// Скалярное произведение с другим вектором
+        /// </summary>
+        /// <param name="vectorB"></param>
+        /// <returns></returns>
+        public double ScalarProduct(Vector vectorB)
         {
-            return (vectorA.X*vectorB.X)+(vectorA.Y*vectorB.Y)+(vectorA.Z* vectorB.X); // возвращает число - скаляр
+            return (X*vectorB.X)+(Y*vectorB.Y)+(Z*vectorB.Z); // возвращает число - скаляр
         }
 
-        //Mетод, вычисляющий векторное произведение с другим вектором
-        public Vector СrossProduct(Vector vectorA, Vector vectorB)  // Возвращает новый век тор
+        //
+        /// <summary>
+        /// Mетод, вычисляющий векторное произведение с другим вектором
+        /// </summary>
+        /// <param name="vectorB"></param>
+        /// <returns></returns>
+        public Vector СrossProduct(Vector vectorB)  // Возвращает новый век тор
         {
             double newVecX, newVecY, newVecZ;
-            newVecX = (vectorA.Y * vectorB.Z - vectorA.Z * vectorB.Y);
-            newVecY = (vectorA.Z * vectorB.X - vectorA.X * vectorB.Z);
-            newVecZ = (vectorA.X * vectorB.Y - vectorA.Y * vectorB.X);
+            newVecX = (Y * vectorB.Z - Z * vectorB.Y);
+            newVecY = (Z * vectorB.X - X * vectorB.Z);
+            newVecZ = (X * vectorB.Y - Y * vectorB.X);
 
             return new Vector(newVecX, newVecY, newVecZ);
         }
 
+        // Косинус между двумя векторами
+        /// <summary>
+        /// Косинус между двумя векторами
+        /// </summary>
+        /// <param name="vectorB"></param>
+        /// <returns></returns>
+        public double CosineOfVector(Vector vectorB)
+        {
+            double lenVectorA = Length();
+            double lenVectorB = vectorB.Length();
 
+            double scalarProduct = ScalarProduct(vectorB);
+
+            return (scalarProduct) / (lenVectorA * lenVectorB);
+        }
+
+
+        // Сумма двух векторов является вектором
+        public Vector SumVector(Vector vectorB)
+        {
+            double newX, newY, newZ;
+
+            newX = X + vectorB.X;
+            newY = Y + vectorB.Y;
+            newZ = Z + vectorB.Z;
+
+            Vector sumVector = new Vector(newX, newY, newZ);
+
+            return sumVector;
+        }
+
+        // Сумма двух векторов является вектором
+        public Vector MinusVector(Vector vectorB)
+        {
+            double newX, newY, newZ;
+
+            newX = X - vectorB.X;
+            newY = Y - vectorB.Y;
+            newZ = Z - vectorB.Z;
+
+            Vector minusVector = new Vector(newX, newY, newZ);
+
+            return minusVector;
+        }
     }
-
-
-
 }
