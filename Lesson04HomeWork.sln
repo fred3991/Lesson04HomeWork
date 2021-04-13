@@ -8,6 +8,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perimeter", "..\..\..\..\Users\FedorovEA\source\repos\Perimeter\Perimeter.csproj", "{E59AF06B-5197-444D-A3B4-11A16EA6312F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vectors", "..\..\..\..\Users\FedorovEA\source\repos\Vectors\Vectors.csproj", "{EA522057-40C1-49C3-96D2-EABF3B4B41B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81574038-2444-47EC-8512-6BC0ACD1A5A2} = {81574038-2444-47EC-8512-6BC0ACD1A5A2}
+		{E59AF06B-5197-444D-A3B4-11A16EA6312F} = {E59AF06B-5197-444D-A3B4-11A16EA6312F}
+		{877CC6E8-B558-4FBE-BB5F-88386208134A} = {877CC6E8-B558-4FBE-BB5F-88386208134A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "..\..\..\..\Users\FedorovEA\source\repos\Shapes\Shapes.csproj", "{81574038-2444-47EC-8512-6BC0ACD1A5A2}"
 EndProject
