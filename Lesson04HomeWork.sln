@@ -5,16 +5,18 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestForLesson", "..\Shapes_Test\UnitTestForLesson.csproj", "{877CC6E8-B558-4FBE-BB5F-88386208134A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perimeter", "..\..\..\..\Users\FedorovEA\source\repos\Perimeter\Perimeter.csproj", "{E59AF06B-5197-444D-A3B4-11A16EA6312F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perimeter", "..\..\..\..\Users\FedorovEA\source\repos\Perimeter\Perimeter.csproj", "{E59AF06B-5197-444D-A3B4-11A16EA6312F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vectors", "..\..\..\..\Users\FedorovEA\source\repos\Vectors\Vectors.csproj", "{EA522057-40C1-49C3-96D2-EABF3B4B41B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vectors", "..\..\..\..\Users\FedorovEA\source\repos\Vectors\Vectors.csproj", "{EA522057-40C1-49C3-96D2-EABF3B4B41B5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{81574038-2444-47EC-8512-6BC0ACD1A5A2} = {81574038-2444-47EC-8512-6BC0ACD1A5A2}
 		{E59AF06B-5197-444D-A3B4-11A16EA6312F} = {E59AF06B-5197-444D-A3B4-11A16EA6312F}
 		{877CC6E8-B558-4FBE-BB5F-88386208134A} = {877CC6E8-B558-4FBE-BB5F-88386208134A}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "..\..\..\..\Users\FedorovEA\source\repos\Shapes\Shapes.csproj", "{81574038-2444-47EC-8512-6BC0ACD1A5A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "..\..\..\..\Users\FedorovEA\source\repos\Shapes\Shapes.csproj", "{81574038-2444-47EC-8512-6BC0ACD1A5A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PerimeterSolution", "PerimeterSolution", "{6F6BE2E7-55EA-407C-8E67-D1E8BDFB801F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E59AF06B-5197-444D-A3B4-11A16EA6312F} = {6F6BE2E7-55EA-407C-8E67-D1E8BDFB801F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C46440CD-6E87-42F1-873E-1EBC09D116C2}
