@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lesson04HomeWork
 {
-    class Vector
+    public class Vector
     {
-        public double X;
-        public double Y;
-        public double Z;
+        private readonly double X;  
+        private readonly double Y;
+        private readonly double Z;
 
         public Vector(double X, double Y, double Z) // Конструктор
         {
@@ -30,7 +30,6 @@ namespace Lesson04HomeWork
         }
 
         // Скалярное произведение с другим вектором
-
 
         /// <summary>
         /// Скалярное произведение с другим вектором
@@ -73,7 +72,6 @@ namespace Lesson04HomeWork
 
             return (scalarProduct) / (lenVectorA * lenVectorB);
         }
-
 
         // Сумма двух векторов является вектором
         public Vector SumVector(Vector vectorB)
